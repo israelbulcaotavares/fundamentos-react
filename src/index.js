@@ -3,6 +3,7 @@ import React from 'react'
 import './index.css'
 
 import Primeiro from './components/basicos/Primeiro';
+import ComParametro from './components/basicos/ComParametro';
 
 
 // const el = document.getElementById('root')
@@ -11,7 +12,19 @@ import Primeiro from './components/basicos/Primeiro';
 const tag = <strong>Olá React!</strong>
 
 ReactDOM.render(
-    <div>
-        <Primeiro />  
+    <div id='app'>
+        <Primeiro/>
+        <ComParametro 
+                titulo="Situação do aluno" 
+                subtitulo="Muito legal!"
+                aluno="Pedro"
+                nota={9.3}    
+                />
+        <ComParametro 
+                titulo="Situação do aluno" 
+                subtitulo="Muito legal!"
+                aluno="Maria"
+                nota={9.9}    
+                />
     </div>,
     document.getElementById('root'))
