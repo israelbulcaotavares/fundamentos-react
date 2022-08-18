@@ -23,8 +23,8 @@ export default () => {
         <Card titulo="#08 - Renderização Condicional" color="#982395">
           <ParOuImpar numero={21} />
           <UsuarioInfo usuario={{ nome: 'Fernando' }} />
-          <UsuarioInfo usuario={{ }} />
-          <UsuarioInfo />
+{/*           <UsuarioInfo usuario={{ }} />
+          <UsuarioInfo /> */}
         </Card>
         <Card titulo="#07 - Desafio Repetição" color="#3A9AD9">
           <TabelaProdutos/>
