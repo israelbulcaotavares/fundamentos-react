@@ -7,6 +7,7 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Card from "./components/layout/Card";
 
+import DiretaPai from "./components/comunicacao/DiretaPai"; 
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
@@ -20,6 +21,9 @@ export default () => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#09 - Comunicação Direta" color="#59323C">
+          <DiretaPai/>
+        </Card>
         <Card titulo="#08 - Renderização Condicional" color="#982395">
           <ParOuImpar numero={21} />
           <UsuarioInfo usuario={{ nome: 'Fernando' }} />
